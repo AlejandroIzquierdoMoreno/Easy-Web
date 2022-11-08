@@ -8,6 +8,7 @@
     padding: 0;
     margin: 0;
     font-family: var(--fuente);
+    font-style: #000;
 }
 
 body {
@@ -15,11 +16,13 @@ body {
 }
 
 .header {
+    position: fixed;
     background-color: var(--color-principal);
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    height: 140px;
+    z-index: 10;
 }
 .logo {
     max-width: 110px;
@@ -47,6 +50,19 @@ body {
 .nav-ul-li a {
     color: #fff;
     text-decoration: none;
+}
+
+.nav-ul-li a:hover {
+    color:#828385;
+    transition-duration: 0.3s;
+}
+
+h1 {
+    padding-top: 140px;
+    position: relative;
+    padding-bottom: -140px;
+    max-width: 1350px;
+    margin: 0 auto;
 }
 
 main {
